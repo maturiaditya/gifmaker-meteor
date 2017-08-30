@@ -15,3 +15,7 @@ You will find all the info related to prerequisites here - https://www.meteor.co
 # API Reference
 
 https://yahoo.github.io/gifshot/index.html
+
+# Recommended browsers to use 
+
+Chrome, Firefox
