@@ -1,19 +1,11 @@
 
 
-# Run the web app
+# Using the package
 
-To run the project, go to the root folder and run the following command
+Meteor.makeGifFromBase64Image 
 
-## meteor
+This method accepts 3 params - imageArr, milliSeconds and callback
 
-To add bootsrtap to your project, use the following command
-
-## meteor add twbs:bootstrap
-
-# Prerequisites
-
-You will find all the info related to prerequisites here - https://www.meteor.com/install
-
-# API Reference
-
-https://yahoo.github.io/gifshot/index.html
+imageArr - array containing base64 string image 
+milliSeconds - milliseoncds interval for each image whenc reating gif
+callback - call back method with success/error object
