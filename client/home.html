@@ -1,0 +1,51 @@
+<head>
+    <title>Gif Maker Test</title>
+    <!-- add bootstrap for style-->
+    <!--<link rel="stylesheet" type="text/css" href="css/bootstrap.css">-->
+</head>
+<body>
+<script type="text/javascript">
+    //create global images varible to have access thouout the application
+    var images ={"image1":"","image2":"","image3":"","image4":"","image5":""};
+</script>
+<div class="container">
+    <header>
+        <h1>Gif Maker Test</h1>
+    </header>
+    <div>
+        <table id="selectImageTable">
+            <tr>
+                <td>
+                    <div id="dropDiv">
+                        <span id="dropText">Drag and <em>Drop</em> here</span>
+                        <ul id="imgList"></ul>
+                    </div>
+                </td>
+                <td>
+                    <div id="image1">1.&nbsp;{{> gifmaker }}</div><br/>
+                    <div id="image2">2.&nbsp;{{> gifmaker }}</div><br/>
+                    <div id="image3">3.&nbsp;{{> gifmaker }}</div><br/>
+                    <div id="image4">4.&nbsp;{{> gifmaker }}</div><br/>
+                    <div id="image5">5.&nbsp;{{> gifmaker }}</div><br/>
+                </td>
+                <td id="gifCreatedHere">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3"><input id="milliSeconds" type="number" placeholder="milliseconds" /></td>
+            </tr>
+            <tr>
+                <td colspan="3"><button id="resetButton" class="btn btn-warning">Reset</button></td>
+            </tr>
+            <tr>
+                <td colspan="3"><button id="submitButton" class="btn btn-primary">Submit</button></td>
+            </tr>
+        </table>
+    </div>
+</div>
+</body>
+
+<!--image template -->
+<template name="gifmaker">
+    <input type=file accept="image/*" />
+</template>
